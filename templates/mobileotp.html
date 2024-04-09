@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Verification</title>
+</head>
+<body>
+<form action="{{ url_for('mobileotp') }}" method="post">
+    <label for="OTP">Enter OTP:</label>
+    <input type="text" id="OTP" name="OTP" required><br><br>
+    <input type="submit" value="Login" />
+</form>
+</body>
+</html>

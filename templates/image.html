@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Display</title>
+</head>
+<body>
+<form action="{{ url_for('img') }}" method="post">
+    <h1>Image Display Example</h1>
+    <img src="{{items}}" alt="Description of the image">
+
+    <label for="Captcha">Enter Captcha:</label>
+    <input type="text" id="Captcha" name="Captcha" required><br><br>
+    <input type="submit" value="Login" />
+</form>
+</body>
+</html>

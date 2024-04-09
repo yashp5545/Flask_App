@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VOTERS' SERVICE PORTAL</title>
+  </head>
+  <body>
+    <h1>VOTERS' SERVICE PORTAL</h1>
+    <form action="{{ url_for('login') }}" method="post">
+        <label for="number">Enter Mobile No:</label>
+        <input type="number" id="number" name="number" required><br><br>
+      <br /><br />
+      <label for="cars">Choose a Country:</label>
+      <select class="form-select" id="stateID" name="stateID">
+        <option>Select Your State</option>
+        <option value="U01">Andaman &amp; Nicobar Islands</option>
+        <option value="S01">Andhra Pradesh</option>
+        <option value="S02">Arunachal Pradesh</option>
+        <option value="S03">Assam</option>
+        <option value="S04">Bihar</option>
+        <option value="U02">Chandigarh</option>
+        <option value="S26">Chattisgarh</option>
+        <option value="U03">Dadra &amp; Nagar Haveli and Daman &amp; Diu</option>
+        <option value="S05">Goa</option>
+        <option value="S06">Gujarat</option>
+        <option value="S07">Haryana</option>
+        <option value="S08">Himachal Pradesh</option>
+        <option value="U08">Jammu and Kashmir</option>
+        <option value="S27">Jharkhand</option>
+        <option value="S10">Karnataka</option>
+        <option value="S11">Kerala</option>
+        <option value="U09">Ladakh</option>
+        <option value="U06">Lakshadweep</option>
+        <option value="S12">Madhya Pradesh</option>
+        <option value="S13">Maharashtra</option>
+        <option value="S14">Manipur</option>
+        <option value="S15">Meghalaya</option>
+        <option value="S16">Mizoram</option>
+        <option value="S17">Nagaland</option>
+        <option value="U05">NCT OF Delhi</option>
+        <option value="S18">Odisha</option>
+        <option value="U07">Puducherry</option>
+        <option value="S19">Punjab</option>
+        <option value="S20">Rajasthan</option>
+        <option value="S21">Sikkim</option>
+        <option value="S22">Tamil Nadu</option>
+        <option value="S29">Telangana</option>
+        <option value="S23">Tripura</option>
+        <option value="S24">Uttar Pradesh</option>
+        <option value="S28">Uttarakhand</option>
+        <option value="S25">West Bengal</option>
+      </select>
+      <input type="submit" value="Login" />
+    </form>
+  </body>
+</html>
